@@ -13,7 +13,8 @@ export default Ember.Component.extend({
       var params = {
         author: this.get('author'),
         answer: this.get('answer'),
-        question: this.get('questionToAnswer')
+        question: this.get('questionToAnswer'),
+        score: 0
       };
       this.set('displayAnswerForm', false);
       this.sendAction('saveAnswer', params);

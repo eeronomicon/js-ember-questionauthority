@@ -23,7 +23,20 @@ export default Ember.Route.extend({
         return question.save();
       });
       this.transitionTo('index');
+    },
+
+    upVote(answer) {
+      var newScore =  answer.get('score') + 1;
+      answer.set('score', newScore);
+      answer.save();
+    },
+
+    downVote(answer) {
+      var newScore =  answer.get('score') - 1;
+      answer.set('score', newScore);
+      answer.save();
     }
+
 
   }
 });
