@@ -25,14 +25,8 @@ export default Ember.Route.extend({
       this.transitionTo('index');
     },
 
-    upVote(answer) {
-      var newScore =  answer.get('score') + 1;
-      answer.set('score', newScore);
-      answer.save();
-    },
-
-    downVote(answer) {
-      var newScore =  answer.get('score') - 1;
+    voteAnswer(answer, adjustment) {
+      var newScore =  answer.get('score') + adjustment;
       answer.set('score', newScore);
       answer.save();
     }

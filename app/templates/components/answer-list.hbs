@@ -1,9 +1,9 @@
 <ul class="list-group">
   <li class="list-group-item active"><h4>Answers</h4></li>
   {{#if answersList}}
-  {{#each answersList as |answer|}}
-    <li class="list-group-item">"{{answer.answer}}"<br>- {{answer.author}} <span class="float-to-right">Score: {{answer.score}} | <a href="#" {{action 'upVote' answer}}>+1</a> | <a href="#" {{action 'downVote' answer}}>-1</a></span></li>
-  {{/each}}
+    {{#each answersList as |answer|}}
+      <li class="list-group-item">"{{answer.answer}}"<br>- {{answer.author}} <span class="float-to-right">Score: {{answer.score}} | <a href="#" {{action 'voteAnswer' answer 1}}><span class="glyphicon glyphicon-thumbs-up"></span></a> | <a href="#" {{action 'voteAnswer' answer -1}}><span class="glyphicon glyphicon-thumbs-down"></span></a></span></li>
+    {{/each}}
   {{else}}
     <li class="list-group-item">No one has provided an answer so far.</li>
   {{/if}}
