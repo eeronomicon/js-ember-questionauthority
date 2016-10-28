@@ -13,8 +13,9 @@
       <label for="notes">Be aware that the quest for knowledge is an endless road trip through purgatory bereft of energy drinks. That said, any further details on your question?</label>
       {{textarea value=notes rows="4" id="notes" class="form-control" required="required"}}
     </div>
-    <button type="submit" class="btn btn-warning">I submit my question to the whims of the Multiverse</button>
+    <button type="submit" class="btn btn-warning btn-full">I submit my question to the whims of the Multiverse!</button>
+    <button type="button" {{action 'hideQuestionForm'}} class="btn btn-danger btn-full">I take it back; I am too timid to ask.</button>
   </form>
 {{else}}
-  <button class="btn btn-info" {{action 'showQuestionForm'}}>Ask A Question!</button>
+  <button class="btn btn-info btn-full" {{action 'showQuestionForm'}}>Ask A Question!</button>
 {{/if}}

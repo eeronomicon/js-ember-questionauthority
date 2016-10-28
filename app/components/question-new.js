@@ -6,6 +6,9 @@ export default Ember.Component.extend({
     showQuestionForm() {
       this.set('displayQuestionForm', true);
     },
+    hideQuestionForm() {
+      this.set('displayQuestionForm', false);
+    },
     newQuestion() {
       var params = {
         author: this.get('author') ? this.get('author') : "",
