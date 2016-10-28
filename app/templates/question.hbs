@@ -1,6 +1,8 @@
 <h2>A Question from {{model.author}}</h2>
 <h3>{{model.question}}</h3>
 {{model.notes}}
-<hr>
+<p></p>
 {{question-edit questionToEdit=model updateQuestion="updateQuestion"}}
+<hr>
+{{answer-list answersList=model.answers}}
 {{answer-new questionToAnswer=model saveAnswer="saveAnswer"}}

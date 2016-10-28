@@ -1,0 +1,10 @@
+<ul class="list-group">
+  <li class="list-group-item active"><h4>Answers</h4></li>
+  {{#if answersList}}
+  {{#each answersList as |answer|}}
+    <li class="list-group-item">"{{answer.answer}}"<br>- {{answer.author}}</li>
+  {{/each}}
+  {{else}}
+    <li class="list-group-item">No one has provided an answer so far.</li>
+  {{/if}}
+</ul>
