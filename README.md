@@ -1,7 +1,20 @@
-# Js-ember-question
+# (The) Question Authority: Ask Me Anything!
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+#### _Epicodus JavaScript Frameworks Independent Project Number Three, 28 October 2016_
+
+#### By _**HK Kahng**_
+
+## Description
+
+Project Requirements: Create a question and answer message board where a user submits a question and other users can respond with answers.
+
+* Questions should have the content of the question itself, an author and additional notes.
+* Answers should have the content of the answer and the author.
+* Include a header and/or navbar that appears on all pages containing the name of your site and a link to the home page.
+* List all questions on the homepage, with only the question and the name of the author showing.
+* Users should be able to click on a question to view additional information.
+* Allow users to add and edit questions.
+* Allow users to add answers to a question. Answers should be added and viewed on the same page as the question they respond to.
 
 ## Prerequisites
 
@@ -51,3 +64,20 @@ Specify what it takes to deploy your app.
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
+  ## Known Bugs
+
+  There are no known bugs in this application.
+
+  ## Support and contact details
+
+  Contact me via GitHub!
+
+  ## Technologies Used
+
+  This app uses the following bits of Human ingenuity: HTML5, JavaScript, Ember.js, FireBase, jQuery, and Bootstrap.
+
+  ### License
+
+  Published under the MIT License.
+
+  Copyright (c) 2016 **_HK Kahng_**
