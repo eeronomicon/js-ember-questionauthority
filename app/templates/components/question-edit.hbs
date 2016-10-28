@@ -4,15 +4,15 @@
   <form {{action 'updateQuestion' questionToEdit on='submit'}}>
     <div class="form-group">
       <label for="author">Who was I again?</label>
-      {{input value=author id="author" placeholder=questionToEdit.author class="form-control" required="required"}}
+      {{input id="author" value=questionToEdit.author class="form-control" required="required"}}
     </div>
     <div class="form-group">
       <label for="question">What did I just ask?</label>
-      {{input value=question id="question" placeholder=questionToEdit.question class="form-control" required="required"}}
+      {{input id="question" value=questionToEdit.question class="form-control" required="required"}}
     </div>
     <div class="form-group">
       <label for="notes">Let me elaborate a bit here....</label>
-      {{textarea rows="4" value=notes id="notes" placeholder=questionToEdit.notes class="form-control" required="required"}}
+      {{textarea rows="4" id="notes" value=questionToEdit.notes class="form-control" required="required"}}
     </div>
     <button type="submit" class="btn btn-warning btn-full">Submit</button>
     <button type="button" {{action 'hideQuestionUpdate'}} class="btn btn-danger btn-full">Cancel</button>
