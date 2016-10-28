@@ -64,20 +64,20 @@ Specify what it takes to deploy your app.
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
-  ## Known Bugs
+## Known Bugs
 
-  There are no known bugs in this application.
+There are no known bugs in this application.
 
-  ## Support and contact details
+## Support and contact details
 
-  Contact me via GitHub!
+Contact me via GitHub!
 
-  ## Technologies Used
+## Technologies Used
 
-  This app uses the following bits of Human ingenuity: HTML5, JavaScript, Ember.js, FireBase, jQuery, and Bootstrap.
+This app uses the following bits of Human ingenuity: HTML5, JavaScript, Ember.js, FireBase, jQuery, and Bootstrap.
 
-  ### License
+### License
 
-  Published under the MIT License.
+Published under the MIT License.
 
-  Copyright (c) 2016 **_HK Kahng_**
+Copyright (c) 2016 **_HK Kahng_**
