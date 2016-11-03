@@ -17,6 +17,11 @@ export default Ember.Component.extend({
       };
       this.set('displayQuestionEdit', false);
       this.sendAction('updateQuestion', question, params);
+    },
+    deleteQuestion(question) {
+      if (confirm('You sure, mate?')) {
+        this.sendAction('deleteQuestion', question);
+      }
     }
   }
 });

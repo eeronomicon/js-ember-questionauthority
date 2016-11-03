@@ -2,7 +2,7 @@
 <h3>{{model.question}}</h3>
 {{model.notes}}
 <p></p>
-{{question-edit questionToEdit=model updateQuestion="updateQuestion"}}
+{{question-edit questionToEdit=model updateQuestion="updateQuestion" deleteQuestion="deleteQuestion"}}
 <hr>
 {{answer-list answersList=model.answers voteAnswer="voteAnswer"}}
 {{answer-new questionToAnswer=model saveAnswer="saveAnswer"}}

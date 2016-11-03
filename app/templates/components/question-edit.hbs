@@ -19,4 +19,5 @@
   </form>
 {{else}}
   <button class="btn btn-success btn-full" {{action 'displayQuestionUpdate'}}>I'd like to rephrase my question....</button>
+  <button class="btn btn-danger btn-full" {{action 'deleteQuestion' questionToEdit}}>Delete this question and purge me of my curiosity!</button>
 {{/if}}
