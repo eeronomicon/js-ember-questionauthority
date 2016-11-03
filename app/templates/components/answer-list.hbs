@@ -2,7 +2,7 @@
   <li class="list-group-item active"><h4>Answers</h4></li>
   {{#if sortedAnswers}}
     {{#each sortedAnswers as |answer|}}
-      <li class="list-group-item">"{{answer.answer}}"<br>- {{answer.author}} <span class="float-to-right">Score: {{answer.score}} | <a href="#" {{action 'voteAnswer' answer 1}}><span class="glyphicon glyphicon-thumbs-up"></span></a> | <a href="#" {{action 'voteAnswer' answer -1}}><span class="glyphicon glyphicon-thumbs-down"></span></a></span></li>
+      <li class="list-group-item">"{{answer.answer}}"<br>- {{answer.author}} <span class="float-to-right">Score: {{answer.score}} | <a href="#" {{action 'voteAnswer' answer 1}}><span class="glyphicon glyphicon-thumbs-up"></span></a> | <a href="#" {{action 'voteAnswer' answer -1}}><span class="glyphicon glyphicon-thumbs-down"></span></a> | <a href="#" {{action 'deleteAnswer' answer}}><span class="glyphicon glyphicon-fire"></span></a></span></li>
     {{/each}}
   {{else}}
     <li class="list-group-item">No one has provided an answer so far.</li>

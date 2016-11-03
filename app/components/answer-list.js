@@ -6,6 +6,12 @@ export default Ember.Component.extend({
   actions: {
     voteAnswer(answer, adjustment) {
       this.sendAction('voteAnswer', answer, adjustment);
+    },
+    deleteAnswer(answer) {
+      if (confirm('You sure you wanna nuke yer answer?')) {
+        var question = answer.get('question');
+        this.sendAction('deleteAnswer', answer, question);
+      }
     }
   }
 });
